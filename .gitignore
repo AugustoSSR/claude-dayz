@@ -2,3 +2,8 @@ node_modules/
 *.log
 *privatekey
 .env
+
+config.local.ps1
+build/
+logs/
+*.biprivatekey

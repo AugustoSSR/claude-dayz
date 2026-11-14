@@ -1,7 +1,7 @@
 {
   "name": "dayz",
-  "version": "0.1.0",
-  "description": "Skills e convencoes para modding e servidor DayZ (Enforce Script, layouts, Central Economy)",
+  "version": "0.2.0",
+  "description": "Skills, agentes e convencoes para modding e servidor DayZ (Enforce Script, layouts, Central Economy, build local)",
   "author": {
     "name": "Augusto Rosa"
   }
