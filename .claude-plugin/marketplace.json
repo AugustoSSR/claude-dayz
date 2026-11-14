@@ -1,0 +1,14 @@
+{
+  "name": "claude-dayz",
+  "owner": {
+    "name": "Augusto Rosa"
+  },
+  "description": "Skills e convencoes para modding e servidor DayZ (Enforce Script, layouts, Central Economy)",
+  "plugins": [
+    {
+      "name": "dayz",
+      "source": "./plugins/dayz",
+      "description": "Skills e convencoes para modding e servidor DayZ (Enforce Script, layouts, Central Economy)"
+    }
+  ]
+}
