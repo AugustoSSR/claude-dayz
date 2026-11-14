@@ -44,7 +44,7 @@ function Get-ShortPath([string]$p) {
 
 function Get-TestProcess {
     Get-CimInstance Win32_Process -Filter "Name = 'DayZServer_x64.exe'" |
-        Where-Object { $_.CommandLine -like "*-profiles=$($Cfg.ProfileName)*" }
+        Where-Object { $_.CommandLine -match ('-profiles=' + [regex]::Escape($Cfg.ProfileName) + '(\s|$)') }
 }
 
 if ($Stop) {

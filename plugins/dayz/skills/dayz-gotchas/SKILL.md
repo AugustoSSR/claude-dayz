@@ -8,6 +8,8 @@ metadata:
 
 # DayZ: armadilhas confirmadas (engine e Enforce Script)
 
+> Achados empíricos, sem versão de build fixada: revalide na sua.
+
 Só o que custou retrabalho real, escrito como regra. Vale para qualquer mod ou servidor DayZ; nada aqui depende de um
 mod específico. O catálogo de "API errada → API certa" fica em `dayz-api-corrections` (ternário, `Close()`,
 `JsonLoadFile` void, assinatura de `OnRPC`, `ClearItems`...). Esta skill cobre o resto: semântica, rede, UI, ciclo de

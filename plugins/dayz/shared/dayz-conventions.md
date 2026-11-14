@@ -212,6 +212,6 @@ fluxo de build real antes de flaggar.
 4. `protected` só libera acesso pra classe declarante + subclasses — NUNCA pra outra classe
    "irmã" no mesmo arquivo, mesmo que pareça razoável logicamente.
 5. **Nunca criar `RestCallback` inline sem referência forte** — se a resposta demorar, o
-   GC coleta o callback antes da resposta chegar, e o engine invoca `OnSuccess`/`OnError`
+   a contagem de referência zera e o callback é liberado antes da resposta chegar, e o engine invoca `OnSuccess`/`OnError`
    em memória já liberada → SIGABRT/heap corruption. Guardar em campo `ref` estático,
    limpar no terminal state (`OnSuccess`/`OnError`/`OnTimeout`) do próprio callback.

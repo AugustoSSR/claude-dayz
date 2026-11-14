@@ -5,8 +5,6 @@ e do engine confirmadas na prática, diagnóstico de `.layout`, revisão de flux
 (código de mod, build e teste local, configuração de servidor) e um pipeline de exemplo para compilar e testar
 localmente.
 
-**Estado: privado, em revisão.** Só vira público depois de uma revisão independente.
-
 ## O que tem
 
 | Item | Para que serve |

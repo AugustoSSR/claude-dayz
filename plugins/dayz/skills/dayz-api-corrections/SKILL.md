@@ -116,7 +116,7 @@ recursão de bootstrap de config/log, não um bug de lógica de negócio.
   virou ~536M, depois 90.198.505 virou "2"), e troquei pra `Param1<string>` — o sintoma
   sumiu temporariamente mas VOLTOU idêntico depois. A troca de RPC não era o fix real (mantida mesmo
   assim, é o padrão mais robusto pra RPC em geral — só não era a causa desse bug específico).
-- **A causa raiz real: conversão `float`→`int` (e aritmética de `int`) quebra nessa engine pra magnitudes
+- **(Observado numa versão do build, sem reprodução independente.) A causa raiz real: conversão `float`→`int` (e aritmética de `int`) quebra nessa engine pra magnitudes
   grandes (~2^29 pra cima), fora de qualquer RPC.** Confirmado com log de diagnóstico direto: um valor de
   config (`2.000.000.000`) estava CORRETO logo após `JsonFileLoader` carregar (`2e+09`), e ficava
   `536870912` (exatamente `2^29`) um passo depois, só por passar por `Math.Floor(x+0.5)` convertido pra

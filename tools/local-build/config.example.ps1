@@ -23,14 +23,13 @@ $Cfg = @{
     # Servidor dedicado (app 223350) usado SÓ para teste local.
     ServerDir       = 'C:\Program Files (x86)\Steam\steamapps\common\DayZServer'
     ServerConfig    = 'serverDZ.cfg'
-    Port            = 2402                 # diferente da porta de produção
+    Port            = 2502                 # qualquer porta diferente da de produção
     ProfileName     = 'profiles_local'     # profile ISOLADO; nunca o que guarda a config real dos mods
-    Mission         = 'dayzOffline.chernarusplus'
 
     # Mods de terceiros instalados pelo Workshop (IDs da pasta steamapps\workshop\content\221100).
     # Preencha com os que o SEU stack realmente exige (framework, mapa...). Este repositório não lista nenhum.
     WorkshopDir     = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\221100'
-    WorkshopMods    = @()                  # por exemplo: @('1559212036')
+    WorkshopMods    = @()                  # por exemplo: @('<id_do_workshop>')
 
     # Texto que o seu módulo escreve no RPT quando inicializa (sinal de PASS). Ajuste ao seu log.
     InitPattern     = 'initialized'
